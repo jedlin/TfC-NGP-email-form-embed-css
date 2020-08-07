@@ -1,0 +1,83 @@
+/***
+ *** 
+ *** CSS for NGP email signup form embedded in Tech for Campaigns template sites
+ ***
+ *** email form in footer & on HP
+ ***/
+
+/* add the below class to a group block that contains the Custom HTML block with the form - and set the group block to full width */
+.hp_email_form {
+	padding-top: 1em;
+}
+
+/* used when the email form is at the top of the footer */
+@media screen and (max-width: 480px) {
+	#pre-footer {
+			padding: 0 .5em;
+	}
+}
+
+/* replace the ID below with the actual ID of the custom HTML element containing the form code */
+section#custom_html-8 {
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+/* in the following selectors replace the ID for the form with your actual form ID */
+#NVSignupForm687620 .at-title,
+#NVSignupForm687620 .at-legend {
+	display: none;
+}
+
+#NVSignupForm687620 .at-inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	#NVSignupForm687620 .at-inner {
+		flex-wrap: nowrap;
+	}
+}
+
+#NVSignupForm687620 form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 782px) {
+	#NVSignupForm687620 form {
+			flex-wrap: nowrap;
+	}
+}
+
+/* replace the font-family and size specified below with whatever is appropriate for your site */
+#NVSignupForm687620 h1 {
+	font-family: Poppins, "Sans-Serif" !important;
+	font-size: calc(34px + 4 * ( (100vw - 400px) / 500)) !important;
+	font-weight: 600 !important;
+	text-align: left;
+}
+
+@media screen and (min-width: 782px) {
+	#NVSignupForm687620 h1 {
+		margin: 0.55em 0 0.67em;
+		text-align: inherit;
+	}
+}
+
+#NVSignupForm687620 label {
+	text-align: left;
+}
+
+/* adjust the button border radius and color to be consistent with your site's style */
+#NVSignupForm687620 input[type="submit"] {
+	border-radius: 1.5em !important;
+	color: #ffffff !important;
+	font-family: sans-serif;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+
